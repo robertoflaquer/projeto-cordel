@@ -1,0 +1,97 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*COMANDOS GERAIS*/
+* {
+    margin: 0;
+}
+
+:root {
+    --fonte1: small-caps 10vw 'Passion One', cursive;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: 3.5vw 'Sriracha', cursive;
+
+}
+
+/*HEADER*/
+header {
+    text-align: center;
+    color: #fff;
+    background-color: black;
+}
+
+header > h1 {
+    font: var(--fonte1);
+    padding-top: 50px;
+}
+
+header > p {
+    font-family: var(--fonte2);
+    font-size: 16px;
+    padding-bottom: 50px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*SECTION*/
+
+section {
+    font: var(--fonte3);
+    line-height: 2;
+}
+
+.texto {
+    padding: 62.5px 0px 62.5px 30px;
+}
+
+.texto > p {
+    padding-bottom: 95.2px;
+}
+
+/*PARALLAX*/
+
+#parallax1 {
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+}
+
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 62.5px 0px 62.5px 30px;
+}
+
+.parallax p {
+    display: inline-block;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+#parallax2 {
+    background-image: url('./imagens/background002.jpg');
+    background-position: left top;
+}
+
+/*FOOTER*/
+
+footer p {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte2);
+}
